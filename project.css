@@ -26,10 +26,10 @@ main{
   background-color:#FBF8F4;
   padding: 3em;
   }
-nav a {
-  text-decoration: none ;
-  display: block;
-}
+  nav a{
+    text-decoration: none;
+  }
+
   nav{
   width: 100%;
   Padding: 0.5em;
@@ -93,7 +93,22 @@ header a:hover{
 header a:visited{
   color: #8f831f;
 }
-
+#flow{
+    font-family: Snell Roundhead;
+    display: flex;
+    justify-content: space-between;
+}
+section{
+    border:1px #271e05 solid;
+    width: 400px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    
+}
+section ul{
+    text-align: left;
+}
 @media (max-width: 700px) {
 #wrap{
 padding:5em;
@@ -115,8 +130,23 @@ nav li{
 #home-content{
     text-align: center;
 }
+#flow{
+    display: flex;
+    flex-direction: column;
+}
+#experience{
+    height: fit-content;
+}
 }
 
+@media(min-width:700px){
+#flow{
+    display: flex;
+    flex-direction: row;
+}
+
+
+}
 
 
 footer{
@@ -134,24 +164,10 @@ footer a{
 
     text-decoration: none;
     color: white;
-    display: flex;
-    justify-content: flex-start;
+    display:inline-block
 }
-
-address a{
-  color: #e4e3d9;
-}
-address a:hover{
-    color: #694E07;
-}
-.page-title{
-  text-align: center;
-}
-.menu{
-  text-align: center;
-}
-.address {
-  text-align: center;
+a img{
+margin-right: 10px;
 }
 
 
