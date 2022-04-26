@@ -29,7 +29,7 @@ fonts
 }
 
 h3{
-  line-height: 1.1;
+  line-height: 1;
   margin:0;
 }
 body{
@@ -65,9 +65,11 @@ margin-bottom: .25em;
 
 }
 .intro-subtitle{
+  color: var(--clr-white);
   margin: 20px;
   font-size: var(--fs-h3);
   background-color: #c4ae78;
+  text-align: center;
 }
 .title-intro{
 
@@ -84,7 +86,7 @@ nav{
   display: none;
 }
 .title-experience{
-
+font-family: var(--ff-primary);
 }
 
 .title{
@@ -97,15 +99,28 @@ nav{
 .sections{
 
 }
-
+.my-experience{
+  background-image: url("background.png");
+  background-color: var(--clr-brown);
+  color: var(--clr-white);
+  background-blend-mode:multiply;
+  font-family: var(--ff-secondary);
+  text-align: center;
+} 
 .button{
-
-}
+display: inline-block;
+padding: .5em 1.5em;
+background-color: var(--clr-dark);
+color: var(--clr-white);
+cursor: pointer;
+font-weight: bold;
+font-family: var(--ff-secondary);
+text-decoration: none;}
 
 .about-body{
 
 }
-.subtitle-about, .subtitle-about{
+.subtitle-about, .intro-subtitle{
 background-color: var(--clr-brown);
 font-family: var(--ff-secondary);
 margin-bottom: 1em;
@@ -156,4 +171,13 @@ align-items: flex-start;
 position: relative;
 }
 
+}
+@media(max-width:700px){
+  .intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2rem;
+  }
 }
