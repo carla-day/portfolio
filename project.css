@@ -2,7 +2,8 @@
 body{
   font-family:Brush Script MT, Snell Roundhead;
   color: #271e05;
-
+    background-image: url("background.png");
+    background-size: auto;
 }
 
 
@@ -46,7 +47,9 @@ nav a:link {color:#271e05;}
 nav a:visited {color:#271e05;}
 nav a:hover {
   color:#694E07;}
-
+#nav{
+    background-color: white;
+}
 nav li{
   display: inline;
   width: 50%;
