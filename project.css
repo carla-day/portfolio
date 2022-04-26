@@ -41,20 +41,19 @@ main{
   padding-right: 0;
   z-index: 9999;
   height: 3em;
-
+  background-color: #271e05;
+    color: white
 }
-nav a:link {color:#271e05;}
-nav a:visited {color:#271e05;}
+nav a:link {color:white;}
+nav a:visited {color:white;}
 nav a:hover {
   color:#694E07;}
-#nav{
-    background-color: white;
-}
+  
+  #nav{
+  }
+
 nav li{
-  display: inline;
-  width: 50%;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom:  1em;
   padding-left: 1em;
   padding-right: 1em;
   text-align: left;
@@ -62,8 +61,9 @@ nav li{
 nav ul{
 display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
-  font-size: 2.5vh;
+  justify-content: space-evenly;
+  font-size: 2vh;
+  list-style-type: none;
 }
 h1{
     font-family: Brush Script MT, snell roundhand;
@@ -77,14 +77,13 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 400px;
-    width: 500px;
+    height: 500px;
+    width: 600px;
 }
 header{
   text-align: center;
-  font-weight: bold;
   height: 4.5em;
-  font-size: 100%;
+  font-size: 1.1em;
 }
 header a:link{
 text-decoration: none;
@@ -101,6 +100,8 @@ header a:visited{
     display: flex;
     justify-content: space-between;
 }
+
+
 section{
     border:1px #271e05 solid;
     width: 400px;
@@ -172,9 +173,6 @@ footer a{
 a img{
 margin-right: 10px;
 }
-
-
-
 
 
 
