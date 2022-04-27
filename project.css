@@ -68,13 +68,28 @@ header{
 }
 
 nav{
-  position: fixed;
   background-color: var(--clr-dark);
   color: var(--clr-white);
-  z-index: 100;
+  width: 100%;  
 }
-
-
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav li{
+  list-style-type: none;
+}
+.nav__link:link{
+text-decoration: none;
+}
+.nav__link:visited{
+color: var(--clr-white)
+}
+.nav__link:hover{
+  border: #c4ae78 2px solid;
+  color: var(--clr-beige);
+}
 
 .intro{
 position: relative;
@@ -86,7 +101,7 @@ margin-bottom: .25em;
   font-size: var(--fs-h3);
   background-color: #c4ae78;
   text-align: center;
-  box-shadow:0.25em 0.25em 0.75em var(--clr-brown);
+  box-shadow:0.25em 0.25em 0.75em var(--clr-dark);
   border-radius: 5px;
   height: 50px;
 
@@ -97,7 +112,8 @@ text-shadow:0.25em 0.25em 0.75em var(--clr-brown);
 
 }
 .intro-img{
-  box-shadow:0.25em 0.25em 0.75em rgba(0,0,0,.25);
+  box-shadow:0.25em 0.25em 0.75em var(--clr-dark);
+  border-radius: 10px;
 }
 
 section{
@@ -119,10 +135,14 @@ text-shadow: 3px 1px 3px #6f5b3e;
 #experience-section{
   display: flex;
   flex-direction: row;
+  ;
+
   
 }
 .sections{
 border: 2px solid var(--clr-dark);
+box-shadow:0.25em 0.25em 0.75em var(--clr-dark);
+
 padding: 2px;
 margin-bottom: 30px;
 margin-right: 5px;
@@ -144,10 +164,12 @@ cursor: pointer;
 font-weight: bold;
 font-family: var(--ff-secondary);
 text-decoration: none;
+border-radius: 5px;
 }
 
 .button:hover{
   background-color: var(--clr-beige);
+  border: #292012 2px solid;
 }
 #about-me{
   border: #292012 2px solid;
@@ -179,6 +201,7 @@ justify-content: flex-end;
   background-image: url("background.png");
   background-color: var(--clr-brown);
   background-blend-mode:color-dodge;
+  text-align: center;
 }
 
 #portfolio{
