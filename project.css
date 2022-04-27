@@ -59,10 +59,26 @@ h3{
   margin: 0;
 font-size: var(--fs-h3) ;
 }
+
+header{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1em;
+}
+
+nav{
+  position: fixed;
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  z-index: 100;
+}
+
+
+
 .intro{
 position: relative;
 margin-bottom: .25em;
-
 }
 .intro-subtitle{
   color: var(--clr-white);
@@ -70,8 +86,14 @@ margin-bottom: .25em;
   font-size: var(--fs-h3);
   background-color: #c4ae78;
   text-align: center;
+  box-shadow:0.25em 0.25em 0.75em var(--clr-brown);
+  border-radius: 5px;
+  height: 50px;
+
 }
 .title-intro{
+margin-bottom: -10px;
+text-shadow:0.25em 0.25em 0.75em var(--clr-brown);
 
 }
 .intro-img{
@@ -82,22 +104,28 @@ section{
 padding: 5em 2em;
 }
 
-nav{
-  display: none;
-}
 .title-experience{
 font-family: var(--ff-primary);
 }
 
 .title{
-
+  text-align: center;
+text-shadow: 3px 1px 3px #6f5b3e;
 }
 .subtitle{
   margin: 0;
   font-size: var(--fs-h3);
 }
+#experience-section{
+  display: flex;
+  flex-direction: row;
+  
+}
 .sections{
-
+border: 2px solid var(--clr-dark);
+padding: 2px;
+margin-bottom: 30px;
+margin-right: 5px;
 }
 .my-experience{
   background-image: url("background.png");
@@ -115,29 +143,88 @@ color: var(--clr-white);
 cursor: pointer;
 font-weight: bold;
 font-family: var(--ff-secondary);
-text-decoration: none;}
-
-.about-body{
-
+text-decoration: none;
 }
-.subtitle-about, .intro-subtitle{
+
+.button:hover{
+  background-color: var(--clr-beige);
+}
+#about-me{
+  border: #292012 2px solid;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.about-body{
+font-family: var(--ff-secondary);
+}
+.intro-subtitle{
 background-color: var(--clr-brown);
 font-family: var(--ff-secondary);
 margin-bottom: 1em;
 padding: .25em 1em;
 }
 .title-about{
+  margin-bottom: -10px;
+  text-shadow: 5px 2px 5px var(--clr-brown);
 
 }
-.portfolio{
+.subtitle-about{
+  box-shadow:0.25em 0.25em 0.75em var(--clr-brown);
+  border-radius: 5px;
+  width: 300px;
+  display: flex;
+justify-content: flex-end;
+}
+#work{
+  background-image: url("background.png");
+  background-color: var(--clr-brown);
+  background-blend-mode:color-dodge;
+}
 
+#portfolio{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+ margin-bottom: 10px;
+ box-shadow: 5px 3px 5px #6f5b3e ;
+}
+.portfolio h3{
+  text-align:start;
+  background-color: var(--clr-white);
 }
 .portfolio-img{
+height: 200px;
+width: 250px;
+border: #6f5b3e 2px solid;
 
 }
-.portfolio-item{
 
+footer{
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  padding: 10px;
+  text-align: center;
+  font-size: .75em;
+  font-family: var(--ff-secondary);
+  display: flex;
+  justify-content: space-evenly;
 }
+footer a:visited{
+  color: var(--clr-white);
+}
+footer a:link{
+  color: var(--clr-white);
+}
+footer:hover{
+background-color: #c4ae78;
+}
+.footer-link{
+text-decoration: none;
+}
+.footer-link:hover{
+  color: #292012;
+}
+
+
 
 @media(min-width:700px){
   :root{
@@ -154,12 +241,13 @@ padding: .25em 1em;
   grid-column-gap: 1em;
   grid-template-areas:
   "img title"
-  "img subtitle"
-  ;
-
+  "img subtitle";
 grid-template-columns: min-content max-content;
 }
-
+#about-me{
+  margin:200px;
+ 
+}
 .intro-img{
   grid-area:img;
   min-width: 250px;
@@ -172,6 +260,12 @@ position: relative;
 }
 
 }
+@media
+(max-width:1000px){
+#about-me{
+  margin:100px
+}
+}
 @media(max-width:700px){
   .intro{
     display: flex;
@@ -179,5 +273,12 @@ position: relative;
     justify-content: center;
     flex-direction: column;
     line-height: 2rem;
+  }
+  #experience-section{
+    display: flex;
+    flex-direction: column;
+  }
+  #about-me{
+    margin: 50px;
   }
 }
