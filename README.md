@@ -1,4 +1,15 @@
-# HTML-project
-Our goal is to build a profile site. It's a chance to show off who you are, what you're about, and what you've accomplished. We will focus on four main areas: The Home page, Bio page, Experience page, and Portfolio page. These initial four pages will make a strong presence for you on the web.
+## Authors
+###### Carla Day
+<a href="linkedin.com/in/carla-day-2a3212217"> <img src="images/linkedin.svg" alt="Linked In" width="30"/> </a>
+<a href="github.com/carla-day" > <img src="images/github.svg" alt="GitHub Profile" width="30"/></a>
+<br>
+<br>
+[![Carla’s github stats](https://github-readme-stats.vercel.app/api?username=carla-day)](https://github.com/carla-day) 
+<br>
+<br>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=carla-day&layout=compact)](https://github.com/carla-day)
 
-Our goal here is to practice writing semantic HTML, basic CSS, and to learn a bit about hosting our content on the web.
+## Acknowledgments
+
+Inspiration, code snippets, etc.
+###### [#Yushi](https://yushi95.medium.com/how-to-create-a-beautiful-readme-for-your-github-profile-36957caa711c#:~:text=Creating%20a%20README.md%20File,-In%20order%20to%20show%20the)
