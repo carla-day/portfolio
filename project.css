@@ -286,6 +286,9 @@ justify-content: flex-end;
 .portfolio h3{
   text-align:start;
   background-color: var(--clr-white);
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 .portfolio-img{
 height: 200px;
