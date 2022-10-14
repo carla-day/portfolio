@@ -149,6 +149,7 @@ nav li{
 }
 .nav__link:link{
 text-decoration: none;
+color: var(--clr-white);
 }
 .nav__link:visited{
 color: var(--clr-white)
@@ -201,7 +202,7 @@ text-shadow: 3px 1px 3px #6f5b3e;
 }
 #experience-section{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   ;
 
   
@@ -281,26 +282,30 @@ justify-content: flex-end;
 }
 .portfolio{
   box-shadow: 5px 3px 5px #6f5b3e ;
-
+margin-right: 5px;
 }
 .portfolio h3{
   text-align:start;
   background-color: var(--clr-white);
+  border-radius: 5px;
   height: 50px;
+  width: 70%;
+  padding: 5px;
+  margin-right: 5px;
   display: flex;
   align-items: center;
   
 }
 .portfolio-img{
-height: 200px;
-width: 250px;
+height: 100px;
+width: 150px;
 border: #6f5b3e 2px solid;
 
 }
 
 .portfolio-img:hover{
-  height: 70%;
-  width: 70% ;
+  height: 20%;
+  width: 150% ;
   border: #c4ae78 5px solid;
   }
 
@@ -381,10 +386,7 @@ position: relative;
     flex-direction: column;
     line-height: 2rem;
   }
-  #experience-section{
-    display: flex;
-    flex-direction: column;
-  }
+
   #about-me{
     margin: 50px;
   }

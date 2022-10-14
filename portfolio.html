@@ -24,7 +24,7 @@
 </header>
   
 
-<h2 class="title">Personal Projects</h2>
+<h2 class="title">Projects</h2>
 <section class="my-work" id="work">
 <div id="portfolio">
 <div class="portfolio">
@@ -32,6 +32,13 @@
   <a href="https://github.com/carla-day/ServiceNow-Data-Visualization" class="portfolio-item" target="_blank">
     <img src="./images/data.svg" alt="Chese List Project" class="portfolio-img">
   </a>
+<div>
+  <h4>Technologies used: </h4><p>Python (Flask, Requests, Pandas), HTML, CSS, JavaScript</p>
+  <h4>Challenges: </h4><p>The main challenge was how to turn the data obtained from the RESTful API into a graph. 
+    My solution was creating python lists which I loop through and counted each low severity incident and high severity incident. This way it was easier to graph in numbers. 
+  </p>
+  <p>One takeaway from this project was using <b>os environ </b>library to save my credentials to the system rather than on my code.</p>
+</div>
 </div>
 
 <div class="portfolio">
@@ -39,13 +46,20 @@
   <a href="https://github.com/Genius-Guavas/inventory-app" class="portfolio-item" target="_blank">
     <img src="./images/inventory.png" alt="Inventory App Collaboration Project" class="portfolio-img">
   </a> 
+  <p><h4>Technologies used:</h4> JavaScript, Express.js, React-DOM</p>
+  <p>As a team, our MVP was to create an app which can keep track of inventory, user can add and remove inventory, view items individually and all at once.  </p>
+  <p>I wanted to take it one step further an added an "ADD TO CART" feature into the app. We also added some mobile features as a team.</p>
+  <p><h4>Challenges:</h4> Since I created the add to cart feature after the app was finished, I needed to find a way to now add this feature without breaking the code. I used useState to set the cart after adding a product through an async function. </p>
 </div>
 
 <div class="portfolio">
   <h3>Oaks Pokedex</h3>
   <a href="https://github.com/NACK-Pokedex/Oaks-Pokedex" class="portfolio-item" target="_blank">
-    <img src="./images/pokedex.png" alt="Pokedex Collaboration Project" class="portfolio-img">
+    <img src="./images/api.png" alt="Pokedex Collaboration Project" class="portfolio-img">
   </a>
+  <p><h4>Technologies used:</h4> JavaScript, Express.js, AUTH0, </p>
+  <p>MVP was to create a RESTful API for Oak to update his pokedex, and allow other authorized scientists to do the same. The Pokedex must be kept safe from Team Rocket and other unauthorized users </p>
+  <p><h4>Challenges:</h4> My biggest challenge was getting the databse for users to load, and I fixed this by revising my seedFn.js file, as it did not contain all paths to the database.</p>
 </div>
 
 </div>
